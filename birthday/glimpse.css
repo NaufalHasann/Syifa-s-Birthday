@@ -1,92 +1,103 @@
+/* Reset dasar untuk menghilangkan margin dan padding bawaan browser */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: #fff;
-    padding-bottom: 60px; /* ruang untuk tombol sticky */
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Font default */
+}
+
+body {
+  background-color: #fff; /* Warna latar belakang body */
+  padding-bottom: 60px; /* Ruang untuk elemen sticky di bawah */
+}
+
+.container {
+  max-width: 320px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Membuat kontainer berada di tengah layar */
+  padding: 16px; /* Ruang di dalam kontainer */
+}
+
+.header {
+  text-align: center; /* Teks header di tengah */
+  margin-bottom: 12px; /* Jarak bawah header */
+}
+
+.icon {
+  width: 40px; /* Lebar ikon */
+  margin-bottom: 5px; /* Jarak bawah ikon */
+}
+
+.title {
+  font-size: 20px; /* Ukuran font judul */
+  font-weight: bold; /* Tebal font judul */
+}
+
+.line {
+  margin: 8px auto; /* Margin atas bawah dan otomatis untuk tengah horizontal */
+  width: 80px; /* Lebar garis pemisah */
+  border: 1px solid #333; /* Gaya garis pemisah */
+}
+
+.gallery {
+  display: grid; /* Menggunakan CSS Grid untuk layout */
+  grid-template-columns: 1fr 1fr; /* Membuat dua kolom dengan lebar yang sama */
+  gap: 12px; /* Jarak antar item grid (foto) */
+}
+
+.gallery img {
+  width: 100%; /* Membuat lebar gambar mengisi sel grid */
+  aspect-ratio: 1 / 1; /* Memastikan rasio aspek gambar 1:1 (square) */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi, mungkin dipotong */
+  border-radius: 8px; /* Membuat sudut gambar menjadi tumpul */
+}
+
+.back-wrapper {
+  position: -webkit-sticky; /* Untuk browser Safari */
+  position: sticky; /* Membuat elemen tetap di posisi bawah saat di-scroll */
+  bottom: 0; /* Posisi di bagian bawah */
+  padding-left: 16px;
+  padding-bottom: 16px;
+  text-align: left;
+  background: white; /* Warna latar belakang wrapper tombol kembali */
+}
+
+.back-btn {
+  display: inline-flex; /* Menggunakan flexbox untuk mengatur ikon dan teks */
+  align-items: center; /* Membuat item flexbox berada di tengah vertikal */
+  gap: 6px; /* Jarak antara ikon dan teks tombol kembali */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: #000; /* Warna teks tombol kembali */
+  font-size: 14px; /* Ukuran font tombol kembali */
+  font-weight: bold; /* Tebal font tombol kembali */
+}
+
+.back-btn img {
+  width: 20px; /* Lebar ikon tombol kembali */
+  height: 20px; /* Tinggi ikon tombol kembali */
+}
+
+.music-button {
+  position: fixed; /* Membuat tombol musik tetap di posisinya saat di-scroll */
+  bottom: 20px;
+  right: 20px;
+  background: none; /* Menghilangkan latar belakang tombol */
+  border: none; /* Menghilangkan border tombol */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat dihover */
+  padding: 0; /* Menghilangkan padding tombol */
+}
+
+.music-button img {
+  width: 50px; /* Lebar ikon musik */
+  height: 50px; /* Tinggi ikon musik */
+}
+
+/* Media query untuk layar dengan lebar lebih besar dari 320px */
+@media (min-width: 321px) {
   .container {
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 16px;
+    max-width: 600px; /* Contoh lebar maksimum kontainer untuk layar lebih besar */
   }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 12px;
-  }
-  
-  .icon {
-    width: 40px;
-    margin-bottom: 5px;
-  }
-  
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .line {
-    margin: 8px auto;
-    width: 80px;
-    border: 1px solid #333;
-  }
-  
+
   .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Membuat kolom responsif dengan lebar minimal 150px */
   }
-  
-  .gallery img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .back-wrapper {
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
-    padding-left: 16px;
-    padding-bottom: 16px;
-    text-align: left;
-    background: white;
-  }
-  
-  .back-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .back-btn img {
-    width: 20px;
-    height: 20px;
-  }
-  
-  
-  .music-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  .music-button img {
-    width: 50px;
-    height: 50px;
-  }
-  
+}

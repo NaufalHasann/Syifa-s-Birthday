@@ -23,6 +23,7 @@
     height: auto;
     border-bottom: 2px solid #ddd;
     margin-bottom: 16px;
+    border-radius: 10px;
   }
   
   .title {
