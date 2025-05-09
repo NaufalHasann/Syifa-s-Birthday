@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+  }
+  
+  
+  .paragraph {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+  
+  .next-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4d9198;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .back-wrapper {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    text-align: left;
+    background: white;
+  }
+  
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .back-btn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+   
+  .music-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .music-button img {
+    width: 50px;
+    height: 50px;
+  }

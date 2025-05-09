@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4; /* Background color */
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.image-section img {
+  width: 80%; /* Adjust as needed */
+  max-width: 300px; /* Limit max width */
+}
+
+.message-section {
+  margin-top: 20px;
+}
+
+.fingerprint img {
+  width: 50px; /* Adjust size as needed */
+  margin-top: 20px;
+}

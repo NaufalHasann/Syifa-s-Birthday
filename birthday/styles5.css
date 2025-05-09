@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Title and Subtitle */
+  .main-title {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  
+  /* Main photo */
+  .main-photo img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 16px;
+    margin: 16px 0 12px;
+    padding-bottom: 5 px;
+  }
+  
+  .surprise-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+  }
+  
+  .surprise-card {
+    flex: 1;
+    max-width: 150px;
+  }
+  
+  
+  .surprise-card {
+    width: 130px;
+    background-color: #dc4ac1;
+    border-radius: 10px;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .surprise-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+  }
+
+  .surprise-card img {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 8px;
+  }
+  
+  /* Gallery */
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Glimpse Button */
+  .glimpse-button {
+    display: inline-block;
+    background-color: #204a51;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Home Icon */
+  .home-icon img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .music-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .music-button img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+  

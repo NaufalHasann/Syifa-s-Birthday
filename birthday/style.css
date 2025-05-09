@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.welcome-message {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.instruction {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+    font-size: 16px;
+}
+
+.fingerprint {
+    margin: 20px 0;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.people-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 300px; /* Set a max width */
+}
